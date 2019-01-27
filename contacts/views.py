@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.contrib.messages.views import SuccessMessageMixin
+from django.conf import settings
 from .models import Contact
 
 
@@ -15,6 +15,7 @@ def contact(request):
             contact.phone = request.POST['phones']
             contact.description = request.POST['descriptions']
             contact.save()
+
             messages.success(request, 'Děkujeme, zpráva byla odeslána')
             return redirect('homepage')
         else:
