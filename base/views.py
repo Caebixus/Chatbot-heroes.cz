@@ -6,3 +6,9 @@ def homepage(request):
 
 def cookies(request):
     return render(request, 'cookies.html', {})
+
+def restfreevzor(request):
+    return render(request, 'restfreetemplate.html', {})
+
+def realitkyfreevzor(request):
+    return render(request, 'realitkyfreetemplate.html', {})

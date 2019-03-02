@@ -7,4 +7,6 @@ urlpatterns = [
     path('', views.homepage, name='homepage'),
     path('contacts/', include('contacts.urls')),
     path('cookies', views.cookies, name='cookies'),
+    path('restaurace_a_kavarny_chatbot_vzor', views.restfreevzor, name='restfreevzor'),
+    path('realitni_makleri_chatbot_vzor', views.realitkyfreevzor, name='realitkyfreevzor'),
 ]
