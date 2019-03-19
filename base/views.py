@@ -4,6 +4,9 @@ from django.shortcuts import render
 def homepage(request):
     return render(request, 'index.html', {})
 
+def blog1(request):
+    return render(request, 'blog1.html', {})
+
 def cookies(request):
     return render(request, 'cookies.html', {})
 
