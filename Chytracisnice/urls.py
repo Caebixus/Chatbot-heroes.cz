@@ -9,5 +9,5 @@ urlpatterns = [
     path('cookies', views.cookies, name='cookies'),
     path('restaurace_a_kavarny_chatbot_vzor', views.restfreevzor, name='restfreevzor'),
     path('realitni_makleri_chatbot_vzor', views.realitkyfreevzor, name='realitkyfreevzor'),
-    path('blog1', views.blog1, name='blog1'),
+    path('5_kroku_k_vytvoreni_chatbota', views.blog1, name='blog1'),
 ]

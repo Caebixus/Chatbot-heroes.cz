@@ -306,16 +306,18 @@
         <h2 class="section-heading text-uppercase" style="text-align: center;">Blog</h2>
         <div class="card-deck">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <a href="{% url 'blog1' %}">
+              <img src="{% static 'blog1pichome.jpg' %}" class="card-img-top" alt="...">
+            </a>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title"><a href="{% url 'blog1' %}">5 jednoduchých kroků k vytvoření efektivního chatbota pro facebook messenger</a></h5>
+              <p class="card-text">Vytvoření jednoduchého reprezentativního chatbota opravdu zabere jen pár desítek minut. Přečtěte si jak na to.</p>
             </div>
-            <div class="card-footer">
-              <a href="{% url 'blog1' %}" class="btn btn-primary">Go somewhere</a>
+            <div class="card-footer" style="text-align: center">
+              <a href="{% url 'blog1' %}" class="btn btn-lg btn-primary">Přečíst více</a>
             </div>
           </div>
-          <div class="card">
+          <div hidden class="card">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -325,7 +327,7 @@
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-          <div class="card">
+          <div hidden class="card">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
