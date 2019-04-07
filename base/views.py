@@ -16,5 +16,8 @@ def cookies(request):
 def restfreevzor(request):
     return render(request, 'restfreetemplate.html', {})
 
+def eshopyfreevzor(request):
+    return render(request, 'eshopyfreetemplate.html', {})
+
 def realitkyfreevzor(request):
     return render(request, 'realitkyfreetemplate.html', {})

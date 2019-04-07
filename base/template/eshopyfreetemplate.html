@@ -14,14 +14,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Zajišťujeme vytvoření a servis jednoduchých FREE a PRO chatbotů, které Vám otevřou cestu do messenger marketingu.">
-<meta name="keywords" content="chatbot, messenger marketing, chatbot marketing, chatbot na facebooku, chatbot vzor, chatbot pro autopujcovny, chatbot autobazary, chatbot pro auto moto">
+<meta name="keywords" content="chatbot, messenger marketing, chatbot marketing, chatbot na facebooku, chatbot vzor">
 <meta name="author" content="www.Chatbot-heroes.cz">
 <meta name="google-site-verification" content="5C6aie7mFVAOf--1Mb5F3Lsmf9yHaav-SvE16Djz_To" />
-<title>2019 | Chatbot - Heroes.cz | Chatbot pro auto-moto</title>
+<title>2019 | Chatbot - Heroes.cz | Vytváření Chatbotů a Chatbot marketing</title>
 
 <!-- Bootstrap core CSS -->
 <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/custom.css' %}" rel="stylesheet">
 <link rel="icon" href="{% static 'roboto-logo.png' %}" sizes="16x16" type="image/png">
 
 <!-- Custom fonts for this template -->
@@ -39,64 +38,71 @@
 <link rel="canonical" href="https://www.chatbot-heroes.cz/" />
 </head>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76JR8H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="color:black">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="/">ChatBot-Heroes</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#services">Služby</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#about">O nás</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#team">Tým</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#contact">Kontaktujte nás</a>
-          </li>
-          <li hidden class="nav-item">
-            <a class="nav-link" href="#contact">EN</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container" style="height: 9rem">
-      <div class="intro-text">
+<body id="page-top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76JR8H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">ChatBot-Heroes</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Služby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">O nás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Tým</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontaktujte nás</a>
+            </li>
+            <li hidden class="nav-item">
+              <a class="nav-link" href="#contact">EN</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container" style="height: 7rem">
+        {% if messages %}
+        <div class="alert alert-succes" style="text-align: center; color:red; padding-top:5rem">
+          {% for message in messages %}
+          <div {% if message.tags %} class="{{ message.tags }}" {% endif %} role="alert"><h4><strong>{{ message }}</strong></h4></div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <div class="intro-text">
+        </div>
+      </div>
+    </header>
   <br>
   <div class="container" style="padding-top: 2rem" id="info">
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Co například dokáže vzor chatbota pro eshopy a e-commerce v základní verzi</h2>
         <br>
-        <p class="lead">- profesionální představení restaurace a jídel s reprezentativními fotkami, případně i s cenou</p>
-        <p class="lead">- na opakující se dotazy reaguje ihned s bohatým obsahem v odpovědi</p>
-        <p class="lead">- veškeré informace o restauraci rychle a jednoduše (otevírací doba, adresa, kontakt)</p>
-        <p class="lead">- přesměruje rezervaci na RESTU nebo do jiné rezervační platformy</p>
-        <p class="lead">- ukáže vybrané reference hostů nebo hodnocení na kterékoli webové stránce</p>
+        <p class="lead">- interaktivní hlavní nabídka, vytvořená tak aby návštěvníka vždy správně odkázala, tam kam potřebuje</p>
+        <p class="lead">- vaše služby nebo produkty představí v obsahově bohatých zprávách nebo zajímavou interakcí</p>
+        <p class="lead">- rychle poskytne základní informace (otevírací doba, adresa, kontakt nebo odkaz na stav objednávky)</p>
       </div>
       <div class="col-md-5">
-        <img src="{% static 'Portrait1a.png' %}" class="d-flex w-100" alt="..." style="max-width: 40rem">
+        <img src="{% static 'PortraitEshop1a.jpg' %}" class="d-flex w-100" alt="Mobilní ukázka chatbota pro eshopy menu" style="max-width: 40rem">
       </div>
     </div>
     <br>
@@ -105,18 +111,19 @@
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Co například dokáže vzor chatbota pro eshopy a e-commerce v pokročilé verzi</h2>
         <br>
-        <p class="lead">- o zákazníkovu rezervaci se může postarat sám chatbot, jde o efektivní strategie do placené propagace na Facebooku</p>
-        <p class="lead">- označte si u lidí, o co se zajímali a posílejte jim zprávy například o svých akcích, open rate zprávy v messengeru je přes 90%</p>
-        <p class="lead">- pošlete zákazníkům zpětně prosbu o hodnocení například na Tripadvisor nebo hodnocení na Facebooku / Googlu</p>
+        <p class="lead">- pokud zákazník hledá specifický produkt, chatbot mu může na základě, například popisku nebo značky, rychle pomoci</p>
+        <p class="lead">- požádejte uživatele jednoduše přes chatbota o přihlášení do Vašeho newsletteru</p>
+        <p class="lead">- pošlete zákazníkům zpětně prosbu o hodnocení Vašich služeb či přímo produktů</p>
       </div>
       <div class="col-md-5 order-md-1">
-        <img src="{% static 'Portrait2a.png' %}" class="d-flex w-100" alt="..." style="max-width: 40rem">
+        <img src="{% static 'PortraitEshop2a.jpg' %}" class="d-flex w-100" alt="Mobilní ukázka chatbota pro eshopy hledám produkt" style="max-width: 40rem">
       </div>
     </div>
   </div>
+  <div class="main CTA" style="text-align: center">
+    <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Chci ukázku chatbota</a>
+  </div>
   <br>
-  <br>
-  <hr>
   <br>
   <br>
   <section id="contact">
