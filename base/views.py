@@ -7,6 +7,9 @@ def homepage(request):
 def blog1(request):
     return render(request, 'blog1.html', {})
 
+def blog2(request):
+    return render(request, 'blog2.html', {})
+
 def sitemap(request):
     return render(request, 'sitemap.xml', {})
 

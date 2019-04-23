@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+{% load static %}
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K76JR8H');</script>
+<!-- End Google Tag Manager -->
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Zajišťujeme vytvoření a servis jednoduchých FREE a PRO chatbotů, které Vám otevřou cestu do messenger marketingu.">
+<meta name="keywords" content="chatbot, messenger marketing, chatbot marketing, chatbot na facebooku, chatbot vzor">
+<meta name="author" content="www.Chatbot-heroes.cz">
+<meta name="google-site-verification" content="5C6aie7mFVAOf--1Mb5F3Lsmf9yHaav-SvE16Djz_To" />
+<title>2019 | Chatbot - Heroes.cz | Jak jednoduše přidat facebook messenger chatbot na svoje webové stránky</title>
+
+<!-- Bootstrap core CSS -->
+<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link rel="icon" href="{% static 'roboto-logo.png' %}" sizes="16x16" type="image/png">
+
+<!-- Custom fonts for this template -->
+<link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+
+<!-- ManyChat -->
+<script src="//widget.manychat.com/2190917664302242.js" async="async"></script>
+<link rel="canonical" href="https://www.chatbot-heroes.cz/" />
+</head>
+
+
+<body id="page-top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K76JR8H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">ChatBot-Heroes</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#services">Služby</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#about">O nás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#team">Tým</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://chatbot-heroes.cz/#contact">Kontaktujte nás</a>
+            </li>
+            <li hidden class="nav-item">
+              <a class="nav-link" href="#contact">EN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container" style="height: 7rem">
+        {% if messages %}
+        <div class="alert alert-succes" style="text-align: center; color:red; padding-top:5rem">
+          {% for message in messages %}
+          <div {% if message.tags %} class="{{ message.tags }}" {% endif %} role="alert"><h4><strong>{{ message }}</strong></h4></div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        <div class="intro-text">
+        </div>
+      </div>
+    </header>
+
+  <div class="container">
+    <div class="article" style="padding-top: 7rem">
+      <h1>Jak jednoduše přidat facebook messenger chatbot na svoje webové stránky?</h1>
+      <p style="font-size: 80%"><b>Published: 23.04.2019  |  Last update: 23.04.2019</b></p>
+      <br>
+      <br>
+      <h4><a href="#bod1">1) Manychat growth tool - customer chat</a></h4>
+      <h4><a href="#bod2">2) Nastavení modulu</a></h4>
+      <h4><a href="#bod3">3) Vygenerování kódu pro implementaci na webové stránky</a></h4>
+      <h4><a href="#bod4">4) Testování a úpravy chatbot logiky</a></h4>
+      <br>
+      <hr>
+      <br>
+      <div class="feature">
+        <p style="font-size: 160%"><b>Úvodem</b></p>
+        <p>Výhody Facebookového messengeru pro firmy jako nové formy komunikace s klienty byly prokázány, od znásobení tržeb až po nemalé snížení nákladů. Lidé však na firemní facebookový messenger psali pouze skrze firemní facebookové stránky, příspěvky či přímo z reklamy.</p>
+        <p>V tomto článku se rozepíšu na nad nejlepším způsobem integrace takového webového chatu přímo na jakékoliv webové stránky a integrace jednoduchého chatbota tak, aby komunikace se zákazníkem byla co nejefektivnější.</p>
+        <br>
+        <div class="feature" id="bod1">
+          <p style="font-size: 160%"><b>1. bod - Manychat growth tool - customer chat</b></p>
+          <p>Manychat nabízí již předpřipravený modul pro nasazení na webové stránky nazývaný <u>customer chat</u> a naleznete ho v sekci <u>growth tools</u>.</p>
+          <p>Podobný modul je určitě i v ostatních platformách pro vývoj chatbotů jako je Chatfuel nebo MobileMonkey, takže se nemusíte omezovat pouze na Manychat.</p>
+          <br>
+          <div class="picture" style="text-align: center;">
+            <img src="{% static 'blog2pic2.jpg' %}" alt="registrace na manychat" style="width: 100%; height: auto; max-width: 30rem">
+          </div>
+          <br>
+        </div>
+        <br>
+        <div class="feature" id="bod2">
+          <p id="bod2" style="font-size: 160%"><b>2. bod - Nastavení modulu</b></p>
+          <p>a) Výběr Opt-in message:</p>
+          <p>Zde můžete vybírat z Vašich již vytvořených chatbot flows, které se začnou ukazovat jakmile návštěvník Vašeho webu klikne na ikonku customer chatu a přihlásí se do messengeru (aby Vám mohl napsat).</p>
+          <p>Pokud nemáte nic vytvořeného, nevadí, v editaci můžete upravit nebo úplně přepsat poskytnuté flow a vytvořit tak něco nového.</p>
+          <div class="picture" style="text-align: center;">
+            <img src="{% static 'blog2pic3.png' %}" alt="opt-in manychat" style="width: 100%; height: auto; max-width: 30rem">
+          </div>
+          <p>b) Úpravy samotné ikonky</p>
+          <p>Design tohoto modulu lze upravovat ke své spokojenosti nebo tak, aby odpovídal designu Vaší značky. Dále lze upravovat jak se chat bude zobrazovat a na jakých zařízeních.</p>
+          <div class="picture" style="text-align: center;">
+            <img src="{% static 'blog2pic4.png' %}" alt="setup manychat" style="width: 100%; height: auto; max-width: 30rem">
+          </div>
+        </div>
+        <br id="bod3">
+        <p style="font-size: 160%"><b>3. bod - Vygenerování kódu pro implementaci na webové stránky</b></p>
+        <p>Po nastavení designu a úprav samotné ikonky přejděte na další krok (před vygenerováním kódu se může objevit ještě kontrolní tabulka s povolenými URL adresami - pokud zde nemáte svoji doménu vepsanou, napište ji), kde již dochází k vygenerování  kódu -> JS snippetu tohoto modulu.</p>
+        <br>
+        <div class="picture" style="text-align: center;">
+          <img src="{% static 'Blog2picJSsnipet.png' %}" alt="vygenerování kódu" style="max-width: 30rem; height: auto;">
+        </div>
+        <br>
+        <p>Tento snipet předejte buď Vašemu developerovi, který jej nasadí na všechny Vaše webové stránky. Nebo markeťákovi, který umí používat Google Tag Manager. Tento nástroj také doporučujeme i my, výhodou jsou další snadné nasazení ostatních manychat modulů: například page-takover pro sběr subscriberů do Vašeho manychatu.</p>
+        <br>
+        <p id="bod4" style="font-size: 160%"><b>4. bod - Testování a úpravy chatbot logiky</b></p>
+        <p>Po nasazení by se měla ikonka do několika minut začít zobrazovat v pravém rohu Vašich webových stránek. Úpravy, například barev a typů zobrazení, lze dělat i po nasazení na stránky a načtou se do několika minut od uložení v manychatu.</p>
+        <p>Samotný chatbot a obsah zpráv, které se zobrazí pokud uživatel klikne na ikonku, lze takové kdykoliv měnit a hlavně optimalizovat, dle toho co návštěvníci na Vašich webových stránkách hledají a na co se nejvíce ptají.</p>
+        <br>
+        <br>
+        <div class="intro-text" style="text-align: center">
+          <a class="btn btn-primary btn-xl text-uppercase" href="https://m.me/379648249282186?ref=w4890793">Nechte si připravit ukázku chatbota</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Comfy-ChatBot 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li hidden class="list-inline-item">
+                <a href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/Chatbot-Heroes-379648249282186/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li hidden class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Ochrana osobních údajů</a>
+              </li>
+              <li hidden class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}" type="text/javascript"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}" type="text/javascript"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{% static 'js/jqBootstrapValidation.js' %}" type="text/javascript"></script>
+    <script src="{% static 'js/contact_me.js' %}" type="text/javascript"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/agency.min.js' %}" type="text/javascript"></script>
+
+    </body>
+
+    </html>

@@ -317,14 +317,16 @@
               <a href="{% url 'blog1' %}" class="btn btn-lg btn-primary">Přečíst více</a>
             </div>
           </div>
-          <div hidden class="card">
-            <img src="..." class="card-img-top" alt="...">
+          <div class="card">
+            <a href="{% url 'blog2' %}">
+              <img src="{% static 'blog2pichome.jpg' %}" class="card-img-top" alt="...">
+            </a>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title"><a href="{% url 'blog2' %}">Přidejte si facebook messenger chatbot na svoje webové stránky</a></h5>
+              <p class="card-text">Jak integrovat messenger chatbota přímo na Vaše webové stránky. Přečtěte si více.</p>
             </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-footer" style="text-align: center">
+              <a href="{% url 'blog2' %}" class="btn btn-lg btn-primary">Přečíst více</a>
             </div>
           </div>
           <div hidden class="card">
