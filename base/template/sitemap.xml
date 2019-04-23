@@ -3,28 +3,40 @@
   <!--created with Free Online Sitemap Generator www.xml-sitemaps.com-->
   <url>
     <loc>https://chatbot-heroes.cz/</loc>
-    <lastmod>2019-03-19T16:29:12+00:00</lastmod>
+    <lastmod>2019-04-23T11:44:37+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>
       https://chatbot-heroes.cz/restaurace_a_kavarny_chatbot_vzor
     </loc>
-    <lastmod>2019-03-19T16:29:12+00:00</lastmod>
+    <lastmod>2019-04-23T11:44:37+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://chatbot-heroes.cz/eshopy_chatbot_vzor</loc>
+    <lastmod>2019-04-23T11:44:37+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>
       https://chatbot-heroes.cz/realitni_makleri_chatbot_vzor
     </loc>
-    <lastmod>2019-03-19T16:29:12+00:00</lastmod>
+    <lastmod>2019-04-23T11:44:37+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>
       https://chatbot-heroes.cz/5_kroku_k_vytvoreni_chatbota
     </loc>
-    <lastmod>2019-03-19T16:29:12+00:00</lastmod>
+    <lastmod>2019-04-23T11:44:37+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>
+      https://chatbot-heroes.cz/Jak_pridat_messenger_chatbot_na_web
+    </loc>
+    <lastmod>2019-04-23T11:44:37+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>
