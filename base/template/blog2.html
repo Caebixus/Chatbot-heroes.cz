@@ -107,11 +107,12 @@
       <div class="feature">
         <p style="font-size: 160%"><b>Úvodem</b></p>
         <p>Výhody Facebookového messengeru pro firmy jako nové formy komunikace s klienty byly prokázány, od znásobení tržeb až po nemalé snížení nákladů. Lidé však na firemní facebookový messenger psali pouze skrze firemní facebookové stránky, příspěvky či přímo z reklamy.</p>
-        <p>V tomto článku se rozepíšu na nad nejlepším způsobem integrace takového webového chatu přímo na jakékoliv webové stránky a integrace jednoduchého chatbota tak, aby komunikace se zákazníkem byla co nejefektivnější.</p>
+        <p>V tomto článku se rozepíši, jak integrovat messenger chatbota pomocí ikonky pro zákaznický chat na jakékoliv webové stránky.</p>
         <br>
         <div class="feature" id="bod1">
           <p style="font-size: 160%"><b>1. bod - Manychat growth tool - customer chat</b></p>
-          <p>Manychat nabízí již předpřipravený modul pro nasazení na webové stránky nazývaný <u>customer chat</u> a naleznete ho v sekci <u>growth tools</u>.</p>
+          <p>Manychat nabízí již předpřipravený modul nazývaný <u>customer chat</u> a naleznete ho v sekci <u>growth tools</u>.</p>
+          <p>Ten funguje jako každý jiný zákaznický chat na webu. Po prokliku budete vyzváni přihlásit se do messengeru a poté s Vámi začne komunikovat již přednastavený facebook chatbot.</u>.</p>
           <p>Podobný modul je určitě i v ostatních platformách pro vývoj chatbotů jako je Chatfuel nebo MobileMonkey, takže se nemusíte omezovat pouze na Manychat.</p>
           <br>
           <div class="picture" style="text-align: center;">
@@ -123,20 +124,20 @@
         <div class="feature" id="bod2">
           <p id="bod2" style="font-size: 160%"><b>2. bod - Nastavení modulu</b></p>
           <p>a) Výběr Opt-in message:</p>
-          <p>Zde můžete vybírat z Vašich již vytvořených chatbot flows, které se začnou ukazovat jakmile návštěvník Vašeho webu klikne na ikonku customer chatu a přihlásí se do messengeru (aby Vám mohl napsat).</p>
+          <p>Zde můžete vybírat z Vašich již vytvořených chatbot částí, které se začnou ihned spouštět jakmile návštěvník Vašeho webu klikne na ikonku customer chatu a přihlásí se do messengeru (aby Vám mohl napsat).</p>
           <p>Pokud nemáte nic vytvořeného, nevadí, v editaci můžete upravit nebo úplně přepsat poskytnuté flow a vytvořit tak něco nového.</p>
           <div class="picture" style="text-align: center;">
             <img src="{% static 'blog2pic3.png' %}" alt="opt-in manychat" style="width: 100%; height: auto; max-width: 30rem">
           </div>
           <p>b) Úpravy samotné ikonky</p>
-          <p>Design tohoto modulu lze upravovat ke své spokojenosti nebo tak, aby odpovídal designu Vaší značky. Dále lze upravovat jak se chat bude zobrazovat a na jakých zařízeních.</p>
+          <p>I design tohoto modulu lze upravovat ke své spokojenosti nebo tak, aby odpovídal designu Vaší značky. Dále lze upravovat i to, jak se customer chat ikonka bude zobrazovat a na jakých zařízeních.</p>
           <div class="picture" style="text-align: center;">
             <img src="{% static 'blog2pic4.png' %}" alt="setup manychat" style="width: 100%; height: auto; max-width: 30rem">
           </div>
         </div>
         <br id="bod3">
         <p style="font-size: 160%"><b>3. bod - Vygenerování kódu pro implementaci na webové stránky</b></p>
-        <p>Po nastavení designu a úprav samotné ikonky přejděte na další krok (před vygenerováním kódu se může objevit ještě kontrolní tabulka s povolenými URL adresami - pokud zde nemáte svoji doménu vepsanou, napište ji), kde již dochází k vygenerování  kódu -> JS snippetu tohoto modulu.</p>
+        <p>Po nastavení designu a úprav samotné ikonky přejděte na další krok (před vygenerováním kódu se může objevit ještě kontrolní tabulka s povolenými URL adresami - pokud zde nemáte svoji doménu vepsanou, napište ji), kde již dochází k vygenerování kódu -> JS snippetu tohoto modulu.</p>
         <br>
         <div class="picture" style="text-align: center;">
           <img src="{% static 'Blog2picJSsnipet.png' %}" alt="vygenerování kódu" style="max-width: 30rem; height: auto;">
@@ -144,9 +145,9 @@
         <br>
         <p>Tento snipet předejte buď Vašemu developerovi, který jej nasadí na všechny Vaše webové stránky. Nebo markeťákovi, který umí používat Google Tag Manager. Tento nástroj také doporučujeme i my, výhodou jsou další snadné nasazení ostatních manychat modulů: například page-takover pro sběr subscriberů do Vašeho manychatu.</p>
         <br>
-        <p id="bod4" style="font-size: 160%"><b>4. bod - Testování a úpravy chatbot logiky</b></p>
-        <p>Po nasazení by se měla ikonka do několika minut začít zobrazovat v pravém rohu Vašich webových stránek. Úpravy, například barev a typů zobrazení, lze dělat i po nasazení na stránky a načtou se do několika minut od uložení v manychatu.</p>
-        <p>Samotný chatbot a obsah zpráv, které se zobrazí pokud uživatel klikne na ikonku, lze takové kdykoliv měnit a hlavně optimalizovat, dle toho co návštěvníci na Vašich webových stránkách hledají a na co se nejvíce ptají.</p>
+        <p id="bod4" style="font-size: 160%"><b>4. bod - Testování a úpravy facebook chatbot logiky</b></p>
+        <p>Po nasazení by se měla ikonka do několika minut začít zobrazovat v pravém rohu Vašich webových stránek. Úpravy, například barev a typů zobrazení, lze dělat i po nasazení na stránky a načtou se do několika minut od uložení a zveřejnění v manychatu.</p>
+        <p>Samotný chatbot a obsah zpráv, které se zobrazí pokud uživatel klikne na ikonku, lze kdykoliv měnit a hlavně optimalizovat, dle toho co návštěvníci na Vašich webových stránkách hledají a na co se nejvíce ptají.</p>
         <br>
         <br>
         <div class="intro-text" style="text-align: center">
