@@ -14,6 +14,7 @@ def contact(request):
             contact.email = request.POST['emails']
             contact.phone = request.POST['phones']
             contact.description = request.POST['descriptions']
+
             contact.save()
 
             messages.success(request, 'Děkujeme, zpráva byla odeslána')
