@@ -90,7 +90,7 @@
         </div>
         {% endif %}
         <div class="intro-text">
-          <h1 class="intro-heading text-uppercase">Chatbot</h1>
+          <h1 class="intro-heading text-uppercase">Chatbot pro eshopy a ecommerce</h1>
           <div class="intro-lead-in">Efektivně, rychle a kdykoliv pomůže Vám i zákazníkům!</div>
           <br>
           <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Chci ukázku</a>
@@ -313,15 +313,15 @@
         <h3 class="section-heading text-uppercase" style="text-align: center;">Blogujeme a píšeme články</h3>
         <div class="card-deck">
           <div class="card">
-            <a href="{% url 'blog1' %}">
-              <img src="{% static 'blog1pichome.jpg' %}" class="card-img-top" alt="suprised boy">
+            <a href="{% url 'blog3' %}">
+              <img src="{% static 'blog4pic1.jpg' %}" class="card-img-top" alt="business">
             </a>
             <div class="card-body">
-              <h5 class="card-title"><a href="{% url 'blog1' %}">5 jednoduchých kroků k vytvoření chatbota pro FB messenger</a></h5>
-              <p class="card-text">Jak vytvořit reprezentativního chatbota opravdu zabere jen pár desítek minut. Přečtěte si jak na to.</p>
+              <h5 class="card-title"><a href="{% url 'blog3' %}">Chatbot pro eshopy - Co mi nabídne a co nesplní?</a></h5>
+              <p class="card-text">Počet uživatelů aplikací pro zasílání zpráv (messaging aplikací) jako je Messenger, WhatsApp, Slack, Skype a dalších raketově stoupá...</p>
             </div>
             <div class="card-footer" style="text-align: center">
-              <a href="{% url 'blog1' %}" class="btn btn-lg btn-primary">Přečíst více</a>
+              <a href="{% url 'blog3' %}" class="btn btn-lg btn-primary">Přečíst více</a>
             </div>
           </div>
           <div class="card">
@@ -336,14 +336,16 @@
               <a href="{% url 'blog2' %}" class="btn btn-lg btn-primary">Přečíst více</a>
             </div>
           </div>
-          <div hidden class="card">
-            <img src="..." class="card-img-top" alt="example pic">
+          <div class="card">
+            <a href="{% url 'blog1' %}">
+              <img src="{% static 'blog1pichome.jpg' %}" class="card-img-top" alt="suprised boy">
+            </a>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <h5 class="card-title"><a href="{% url 'blog1' %}">5 jednoduchých kroků k vytvoření chatbota pro FB messenger</a></h5>
+              <p class="card-text">Jak vytvořit reprezentativního chatbota opravdu zabere jen pár desítek minut. Přečtěte si jak na to.</p>
             </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-footer" style="text-align: center">
+              <a href="{% url 'blog1' %}" class="btn btn-lg btn-primary">Přečíst více</a>
             </div>
           </div>
         </div>

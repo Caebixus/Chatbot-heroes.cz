@@ -10,6 +10,9 @@ def blog1(request):
 def blog2(request):
     return render(request, 'blog2.html', {})
 
+def blog3(request):
+    return render(request, 'blog3.html', {})
+
 def sitemap(request):
     return render(request, 'sitemap.xml', {})
 
