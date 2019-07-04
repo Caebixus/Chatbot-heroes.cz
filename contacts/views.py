@@ -17,6 +17,7 @@ def contact(request):
             contact.description = request.POST['descriptions']
 
             contact.save()
+            messages.success(request, 'Děkujeme, zpráva byla odeslána')
             send_mail(
                 'Nová poptávka na Chatbot-heroes',
                 'Dobrý den, přišla nová poptávka na chatbota',
@@ -24,7 +25,6 @@ def contact(request):
                 ['comfycomfew@gmail.com'],
                 fail_silently=False,
                 )
-            messages.success(request, 'Děkujeme, zpráva byla odeslána')
             return redirect('homepage')
         else:
             messages.success(request, 'Zpráva neodeslána')
