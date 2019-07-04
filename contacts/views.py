@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.core.mail import send_mail
 from django.contrib import messages
 from django.conf import settings
 from .models import Contact
@@ -16,7 +17,13 @@ def contact(request):
             contact.description = request.POST['descriptions']
 
             contact.save()
-
+            send_mail(
+            'Nová poptávka na Chatbot-heroes',
+            'Dobrý den, přišla nová poptávka na chatbota',
+            'info.zadavatel@gmail.com',
+            ['comfycomfew@gmail.com'],
+            fail_silently=False,
+            )
             messages.success(request, 'Děkujeme, zpráva byla odeslána')
             return redirect('homepage')
         else:
