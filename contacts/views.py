@@ -18,12 +18,12 @@ def contact(request):
 
             contact.save()
             send_mail(
-            'Nová poptávka na Chatbot-heroes',
-            'Dobrý den, přišla nová poptávka na chatbota',
-            'info.zadavatel@gmail.com',
-            ['comfycomfew@gmail.com'],
-            fail_silently=False,
-            )
+                'Nová poptávka na Chatbot-heroes',
+                'Dobrý den, přišla nová poptávka na chatbota',
+                'info.zadavatel@gmail.com',
+                ['comfycomfew@gmail.com'],
+                fail_silently=False,
+                )
             messages.success(request, 'Děkujeme, zpráva byla odeslána')
             return redirect('homepage')
         else:
